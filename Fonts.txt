@@ -1,0 +1,8 @@
+Codec-Cold-ExtraBold-trial.ttf   Logo
+
+Poppins Bold 700  : Logo             --->  https://fonts.google.com/specimen/Poppins?preview.text=space&preview.text_type=custom
+
+Roboto Bold 700   : Texto            --->  https://fonts.google.com/specimen/Roboto?preview.text=forward&preview.text_type=custom&selection.family=Roboto:wght@700
+
+Roboto Bold 700   : Letras del Menu  --->  https://fonts.google.com/specimen/Roboto?preview.text=forward&preview.text_type=custom&selection.family=Roboto:wght@700
+

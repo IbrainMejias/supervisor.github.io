@@ -1,0 +1,16 @@
+
+<!-- begin snippet: js hide: false console: true babel: null -->
+
+<!-- language: lang-js -->
+
+    $("#mi-boton").click(function(){
+      $(this).toggleClass("btn-danger btn-success");
+    });
+
+<!-- language: lang-html -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css" rel=stylesheet>
+    <button id="mi-boton" class="btn btn-danger">boton</button>
+
+<!-- end snippet -->

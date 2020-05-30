@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- <script src="https://kit.fontawesome.com/cc040b794b.js" crossorigin="anonymous"></script> -->
+    <!-- Custon Stile -->    
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Menu</title>
+</head>
+
+<!-- <img class="input-group-text img-fluid" src="iconos/password_userpassword_9564.png" width="50" > -->
+<body>
+
+    <nav id="menu" class="navbar navbar-expand-md fixed-top navbar-light py-0">
+    	
+        <div class="container-fluid">
+        	<div class="menuLeft" >
+                <a href="Menu.html" class="navbar-brand img-fluid" ><img src="iconos/logoim.png" width="52" height="46"> Supervisor</a>
+                
+                <span class="text-center" Style="color:floralwhite ; font-size: 12px;" >Ibrahim Mejias</span>
+            </div>	
+           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"    a-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto" id="fuenteMenu"> 
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuTotal" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  >Totales 
+                        </a>
+                        <div class="dropdown-menu mt-2" aria-labelledby="menuTotal">
+                            <a class="dropdown-item" href="#totalSupervisor">Total - Supervisor</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Total por Fecha - Supervisor</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDatos" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Datos
+                        </a>
+                        <div class="dropdown-menu mt-2" aria-labelledby="menuDatos">
+                            <a class="dropdown-item" href="#miEquipo">Mi Equipo</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#Supervisor">Supervisor</a>
+                            <a class="dropdown-item" href="#Vendedor">Vendedor</a>
+                            <div class="dropdown-divider"></div>
+                            <!-- <a class="dropdown-item" href="#ContratoX">Contratos</a> -->
+                            <a class="dropdown-item" href="#Contrato">Contratos</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contactanos</a> 
+                    </li>
+                 
+                    
+                </ul>
+            </div>
+            <div class="menuRight d-none d-md-block" >
+            	<a href="Menu.html" class="navbar-brand img-fluid" ><img src="iconos/buscar_48Px.png" width="26" height="26"></a>
+            </div>
+            
+        </div>
+    </nav>
+    
+
+    <header class="bg-warning" > 
+        <div class="header-text"> <em><h3>Carga tu Data  <span Style="color: rgb(251,138,4); font-size: 36px;" >Feliz</span></h3></em> </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-mx-3 pt-2 ml-1">
+                        <form class="card py-3 sombraNegra" action="" >
+                            
+                            <div class="card-body">
+                                <div class="input-group">
+                                    <div class="input-group-prepend mb-2">
+                                        <!--  <img src="iconos/person.svg" alt="" width="32" height="32" title="Usuario"> -->
+                                        <img class="input-group-text" src="iconos/user.png" width="50" >
+
+
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Usuario">
+                                </div>
+    
+                                <div class="input-group">
+                                    <div class="input-group-prepend mb-4">
+                                        <img class="input-group-text" src="iconos/password_userpassword_9564.png" width="50" >
+                                    </div>
+                                    <input type="password" class="form-control" placeholder="Contraseña" >
+                                </div>
+
+                                <input type="submit" value="Entrar" class="btn btn-info btn-block" name="bt-Enviar" title="Ingresar a la Aplicación" data-toggle="tooltip" />
+
+                            </div>
+                            
+                        </form>
+                    </div>
+    
+                                     
+                </div>
+            </div>
+    </header>
+
+    <section id="totalSupervisor" class="py-5 bg-info">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-12">
+                    
+                    <form class="card border-0 sombraNegra " action=""  >
+                        <h4 class="text-center" >TOTAL POR SUPERVISOR</h4>
+                        <div class="card-body p-1">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/UserBuscar_32Px.png" width="50" >
+                                </div>
+                                <input type="text" id="caja_busqueda" class="form-control" placeholder="Vendedor a Buscar">
+                            </div>
+                        </div>
+
+                        <div >
+                            <!--  -->
+                        </div>
+                    </form>
+                </div>
+
+                <!-- <div class="col-md-4 my-4">
+                                         
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <section id="miEquipo" class="py-5 bg-info">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <form class="card border-0 sombraNegra" action="" >
+                        <h3 class="py-3">MI EQUIPO</h3>
+                        
+                        <div class="card-body p-1">
+                            <div class="input-group mb-1  w-50">
+                                <div class="input-group-prepend ">
+                                    <img class="input-group-text" src="iconos/id-card_32Px.png" width="50" >
+                                </div>
+                                <input name="rut" type="text" class="form-control" placeholder="Rut">
+                            </div>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/people_32Px.png" width="50" >
+                                </div>
+                                <input name="razon1" type="text" class="form-control text-capitalize" placeholder="Apellidos">
+                            </div>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/people_32Px.png" width="50" >
+                                </div>
+                                <input name="razon2" type="text" class="form-control text-capitalize" placeholder="Nombres">
+                            </div>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/smartphone_32Px.png" width="50" >
+                                </div>
+                                <input name="telefono" type="text" class="form-control" placeholder="Telefono" >
+                            </div>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/emailSend_32Px.png" width="50" >
+                                </div>
+                                <input name="email" type="email" class="form-control" placeholder="Correo" >
+                            </div>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/map_32Px.png" width="50" >
+                                </div>
+                                <input name="Direccion" type="text" class="form-control" placeholder="Dirección" >
+                            </div>
+                            <div class="input-group mx-0 my-2">
+                                <!-- Foraneo -->
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/salesMan_32Px.png" width="50" >
+                                </div>
+                                    
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Si es Foraneo</option>
+                                    <option>Emily Roxana Mejias Linares</option>
+                                    <option>Mary Linares</option>
+                                    <option>Adelina</option>
+                                    <option>Yurliana</option>
+                                </select>
+                            </div>                                
+                            <input type="submit" value="Enviar" class="my-3 btn btn-success btn-block" name="bt-Enviar" title="Incluir en el Equipo" data-toggle="tooltip" />
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body p-0 pt-2">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <img class="input-group-text" src="iconos/UserBuscar_32Px.png" width="50" >
+                            </div>
+                            <input type="text" id="caja_busqueda" class="form-control" placeholder="Vendedor a Buscar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Supervisor" class="bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 align-self-center">
+                    
+                    <form class="card sombraNegra" action="" >
+                        <h3 class="py-3">SUPERVISOR</h3>
+                        
+                        <div class="card-body p-1">
+
+                            <div class="input-group mb-1  w-50">
+                                <div class="input-group-prepend ">
+                                    <img class="input-group-text" src="iconos/id-card_32Px.png" width="50" >
+                                </div>
+                                <input name="rut" type="text" class="form-control" placeholder="Rut">
+                            </div>
+
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/people_32Px.png" width="50" >
+                                </div>
+                                <input name="razon1" type="text" class="form-control text-capitalize" placeholder="Apellidos">
+                            </div>
+
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/people_32Px.png" width="50" >
+                                </div>
+                                <input name="razon2" type="text" class="form-control text-capitalize" placeholder="Nombres">
+                            </div>
+
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/smartphone_32Px.png" width="50" >
+                                </div>
+                                <input name="telefono" type="text" class="form-control" placeholder="Telefono" >
+                            </div>
+
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/emailSend_32Px.png" width="50" >
+                                </div>
+                                <input name="email" type="email" class="form-control" placeholder="Correo" >
+                            </div>
+
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/map_32Px.png" width="50" >
+                                </div>
+                                <input name="Direccion" type="email" class="form-control" placeholder="Dirección Exacta" >
+                            </div>
+
+                            <div class="input-group mx-0 my-2 w-50">
+                                <!-- Es Vendedor -->
+                                <div class="switchSupervisor" >
+                                    <div class="input-group-prepend custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                                        <label class="custom-control-label" for="customSwitch4"></label>
+                                    </div>
+                                </div>
+
+                                <div class="mr-0 form-control form-row " >
+                                    <div class="custom-control p-0"><p>Vendedor</p></div>
+                                </div>
+                                
+                            </div>
+                            <input type="submit" value="Enviar" class="my-3 btn btn-success btn-block" name="bt-Enviar" title="Incluir el Supervisor" data-toggle="tooltip" />
+
+                        </div>
+                        
+                    </form>
+
+                </div>
+                
+                <div class="col-md-7 d-none d-md-block">
+                    <div id='SupervisorRight' class="card-body p-0 bg-info border-1" >
+                    	<h3></h3>
+                    	
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Vendedor" class="">
+        <div class="container">
+            <div class="row">
+
+                
+
+                <div class="col-md-6 d-none d-md-block p-0 m-0">
+                    <div id='vendedorRight' class="card-body" >
+                    	<h3 id="fuenteUber">Hoy será un <span Style="color: rgb(251,138,4); font-size: 38px;" >gran</span> día</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-1 d-none d-md-block p-0 m-0">
+                </div>
+
+                <div class="col-md-5  ">  <!-- align-self-center -->
+                    <form class="card vendedorLeft" action="" >
+                        <h3 class="py-3">VENDEDOR</h3>
+                        
+                        <div class="card-body p-1">
+
+                            <div class="input-group mb-1 w-50">
+                                <div class="input-group-prepend ">
+                                    <img class="input-group-text" src="iconos/id-card_32Px.png" width="50" >
+                                </div>
+                                <input name="rut" type="text" class="form-control" placeholder="Rut" disabled>
+                            </div>
+
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/people_32Px.png" width="50" >
+                                </div>
+                                <input name="razon1" type="text" class="form-control text-capitalize" placeholder="Apellidos">
+                            </div>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/people_32Px.png" width="50" >
+                                </div>
+                                <input name="razon2" type="text" class="form-control text-capitalize" placeholder="Nombres">
+                            </div>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/smartphone_32Px.png" width="50" >
+                                </div>
+                                <input name="telefono" type="text" class="form-control" placeholder="Telefono" >
+                            </div>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/emailSend_32Px.png" width="50" >
+                                </div>
+                                <input name="email" type="email" class="form-control" placeholder="Correo" >
+                            </div>
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/map_32Px.png" width="50" >
+                                </div>
+                                <input name="Direccion" type="text" class="form-control" placeholder="Dirección" >
+                            </div>
+                                                        
+                            <input type="submit" value="Enviar" class="my-3 btn btn-success btn-block" name="bt-Enviar" title="Incluir en el Equipo" data-toggle="tooltip" />
+                        </div>
+                    </form>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="ContratoX" class="py-5 bg-light">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-md-7">
+                    
+                    <form class="card sombraNegra" action="" >
+                        <h3>CONTRATO</h3>
+                        <div class="card-body p-1 mt-2">
+
+                            <div class="form-row justify-content-end px-1">
+                                <div class="input-group mb-1  w-50">
+                                    <div class="input-group-prepend">
+                                        <img class="input-group-text" src="iconos/calendar_32Px.png" width="50" >
+                                    </div>
+                                    <input name="fecha" type="date" class="form-control" placeholder="Fecha del Contrato" >
+                                </div>
+                            </div>
+ 
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend ">
+                                    <img class="input-group-text" src="iconos/idcard_32Px.png" width="50" >
+                                </div>
+                                <input name="peticion" type="text" class="form-control" placeholder="Nro. de Petición">
+                            </div>
+
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend ">
+                                    <img class="input-group-text" src="iconos/id-card_32Px.png" width="50" >
+                                </div>
+                                <input name="rut" type="text" class="form-control" placeholder="Rut">
+                                <div class="input-group-prepend  ml-1">
+                                    <img class="input-group-text" src="iconos/nroplastico_32Px.png" width="50" >
+                                </div>
+                                <input name="nroDeSerie" type="text" class="form-control" placeholder="Nro. de Serie">
+                            </div>
+
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/company_32Px.png" width="50" >
+                                </div>
+                                <input name="razon1" type="text" required class="form-control text-capitalize" placeholder="Nombres ó ( Razon Social )">
+                                
+                            </div>
+
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/people_32Px.png" width="50" >
+                                </div>
+                                <input name="razon2" type="text" class="form-control text-capitalize"  placeholder="Apellidos">
+                            </div>
+
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/smartphone_32Px.png" width="50" >
+                                </div>
+                                <input name="telefono" type="text" class="form-control" placeholder="Telefono" >
+                            </div>
+
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/emailSend_32Px.png" width="50" >
+                                </div>
+                                <input name="email" type="email" class="form-control" placeholder="Correo" >
+                            </div>
+
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/map_32Px.png" width="50" >
+                                </div>
+                                <input name="Direccion" type="text" class="form-control" placeholder="Dirección Exacta" >
+                            </div>
+
+                            <div class="input-group mx-0 my-2">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/direction_32Px.png" width="50" >
+                                </div>
+                                    
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Comuna</option>
+                                    <option>La Florida</option>
+                                </select>
+                            </div>  
+
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend mr-1">
+                                    <img class="input-group-text" src="iconos/contrato_32Px.png" width="50" height="40" >
+                                </div>
+                                <div class="mr-0 form-control form-row align-items-center justify-content-around" >
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck1" >
+                                        <label class="custom-control-label ContratoServicio" for="customCheck1">Banda Ancha</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck2" >
+                                        <label class="custom-control-label ContratoServicio" for="customCheck2">Telefonia</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck3" >
+                                        <label class="custom-control-label ContratoServicio" for="customCheck3">Televisión</label>
+                                    </div>                                
+                                </div>
+                            </div>
+
+                            <div class="input-group mb-1">
+                                <div class="input-group-prepend ">
+                                    <img class="input-group-text" src="iconos/cicloDePago_32Px.png" width="50" >
+                                </div>
+                                <input name="cicloPago" type="text" class="form-control" placeholder="Ciclo de Pago">
+
+                                <div class="input-group-prepend  ml-1">
+                                    <img class="input-group-text" src="iconos/deco_32Px5.png" width="50" >
+                                </div>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Decoficador</option>
+                                    
+                                </select>
+                            </div>
+
+                            <div class="input-group  mb-1">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/documentWrite_32Px.png" width="50" height="40" >
+                                </div>
+                                <textarea name="observacion" class="form-control " rows="3" placeholder="Observación"></textarea>
+                            </div>
+                            <input type="submit" value="Vender" class="my-3 btn btn-success btn-block" name="bt-Enviar" title="Incluir la Venta" data-toggle="tooltip" />
+
+                        </div>
+                        
+                    </form>
+
+                </div>
+                <div class="col-md-5 my-4 my-auto">
+                    <p>Texto del Contrato</p>                        
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <section id="Contrato" class="">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-7">
+                    <form class="card sombraNegra" action="" >
+                        
+                        <div class="row pt-0 mx-3 my-2 justify-content-between">
+                            <button type="button" class="btn btn-light btn-sm">
+                                <img src="iconos/duplicar_64Px.png" width="28" height="34">
+                            </button>
+
+                            <p class="contratoHeader">CONTRATO</p>
+                            
+                            <button type="button" class="btn btn-light btn-sm">
+                                <img src="iconos/Enviar_48Px.png" width="26" height="30">    
+                            </button>
+                        </div>
+
+                        <div class="card-body p-1 ">
+                            <div class="accordion" id="accordionContrato">
+                                
+                                <!-- Cliente -->
+                                <div class="card">
+                                    <div class="card-header px-1" id="headingCliente">
+                                        <h2 class="mb-0">
+                                            <div class="input-group mb-0">
+                                                <div class="input-group-prepend ">
+                                                    <img class="input-group-text" src="iconos/id-card_32Px.png" width="50" >
+                                                </div>
+                                                <input name="rut" type="text" class="form-control" placeholder="Rut">
+
+                                                <div class="input-group-prepend ml-1">
+                                                    <img class="input-group-text" src="iconos/idcard_32Px.png" width="50" >
+                                                </div>
+                                                <input name="peticion" type="text" class="form-control" placeholder="Nº de Petición">
+                                            </div>
+
+                                            <div class="input-group">
+                                                <div class="input-group-prepend pt-1">
+                                                    <img class="input-group-text " src="iconos/company_32Px.png" width="50" height="38" >
+                                                </div>
+                                                <input name="cliente" type="text" class="form-control text-capitalize mx-0 my-1" placeholder="Nombres ó ( Razon Social )">
+
+                                                <button class="btn btn-link p-0 m-0" type="button" data-toggle="collapse" data-target="#collapseCliente" aria-expanded="true" aria-controls="collapseCliente">
+                                                    <img class="input-group-text" src="iconos/flechaAbajo_32Px.png" width="50" >
+                                                </button>
+
+                                            </div>
+                                        </h2>
+                                    </div>
+                                    <!-- Cliente Datos -->
+                                    <div id="collapseCliente" class="collapse" aria-labelledby="headingCliente" data-parent="#accordionContrato">
+                                        <div class="card-body  p-0">
+                                            <div class="mx-1 mt-1 mb-3">
+                                                <div class="bg-Cliente">
+                                                    
+                                                    <div class="input-group mb-1">
+                                                        <div class="input-group-prepend">
+                                                            <img class="input-group-text" src="iconos/phone_32Px.png" width="50" >
+                                                        </div>
+                                                        <input name="telefono" type="text" class="form-control" placeholder="Telefono" >
+                                                    </div>
+                        
+                                                    <div class="input-group mb-1">
+                                                        <div class="input-group-prepend">
+                                                            <img class="input-group-text" src="iconos/emailSend_32Px.png" width="50" >
+                                                        </div>
+                                                        <input name="email" type="email" class="form-control" placeholder="Correo" >
+                                                    </div>
+                        
+                                                    <div class="input-group mb-1">
+                                                        <div class="input-group-prepend">
+                                                            <img class="input-group-text" src="iconos/map_32Px.png" width="50" >
+                                                        </div>
+                                                        <input name="Direccion" type="text" class="form-control" placeholder="Dirección" >
+                                                    </div>
+                        
+                                                    <div class="input-group mx-0 mt-1">
+                                                        <!-- Comuna -->
+                                                        <div class="input-group-prepend">
+                                                            <img class="input-group-text" src="iconos/direction_32Px.png" width="50" >
+                                                        </div>
+                                                            
+                                                        <select name="comuna" class="form-control" id="exampleFormControlSelect1">
+                                                            <option>Comuna</option>
+                                                            <option>La Florida</option>
+                                                        </select>
+                                                    </div>  
+                                                </div>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Instalación -->
+                                <div class="card">
+                                    <div class="card-header px-1" id="headingInstalacion">
+                                        <h2 class="mb-0">
+                                            <div class="input-group mb-0">
+                                                <div class="input-group-prepend">
+                                                    <img class="input-group-text" src="iconos/map_32Px.png" width="50" >
+                                                </div>
+                                                <input name="Direccion-razon" type="text" class="form-control" placeholder="Dirección Exacta de  INSTALACIÓN" >
+                                            </div>  
+                                            <div class="input-group">
+
+                                                <div class="input-group-prepend pt-1">
+                                                    <img class="input-group-text" src="iconos/smartphone_32Px.png" width="50"  height="38" >
+                                                </div>
+                                                <input name="telefono-razon" type="text" class="form-control mx-0 my-1" placeholder="Telefono" >
+
+                                                <button class="btn btn-link collapsed p-0 m-0" type="button" data-toggle="collapse" data-target="#collapseInstalacion" aria-expanded="false" aria-controls="collapseInstalacion">
+                                                    <img class="input-group-text" src="iconos/flechaAbajo_32Px.png" width="50" >
+                                                </button>
+
+                                            </div>
+                                            
+                                        </h2>
+                                    </div>
+                                    <!-- Instalación Datos -->
+                                    <div id="collapseInstalacion" class="collapse " aria-labelledby="headingInstalacion" data-parent="#accordionContrato">
+                                        <div class="card-body p-0">
+                                            <div class="mx-1 mt-1 mb-3">
+                                                <div class="bg-instalacion">
+                                                    <div class="input-group mb-1">
+                                                        <div class="input-group-prepend ">
+                                                            <img class="input-group-text" src="iconos/id-card_32Px.png" width="50" >
+                                                        </div>
+                                                        <input name="rut-razon" type="text" class="form-control" placeholder="Rut">
+                                                    </div>
+
+                                                    <div class="input-group mb-1">
+                                                        <div class="input-group-prepend">
+                                                            <img class="input-group-text" src="iconos/people_32Px.png" width="50" >
+                                                        </div>
+                                                        <input name="razon1" type="text" required class="form-control text-capitalize" placeholder="Nombres">
+                                                        
+                                                    </div>
+                        
+                                                    <div class="input-group mb-1">
+                                                        <div class="input-group-prepend">
+                                                            <img class="input-group-text" src="iconos/people_32Px.png" width="50" >
+                                                        </div>
+                                                        <input name="razon2" type="text" class="form-control text-capitalize"  placeholder="Apellidos">
+                                                    </div>
+
+                                                    <div class="input-group mb-1">
+                                                        <div class="input-group-prepend">
+                                                            <img class="input-group-text" src="iconos/emailSend_32Px.png" width="50" >
+                                                        </div>
+                                                        <input name="email-razon" type="email" class="form-control" placeholder="Correo" >
+                                                    </div>
+
+                                                    <div class="input-group mx-0 mt-1">
+                                                        <!-- Comuna -->
+                                                        <div class="input-group-prepend">
+                                                            <img class="input-group-text" src="iconos/direction_32Px.png" width="50" >
+                                                        </div>
+                                                        <select name="comuna-razon" class="form-control" id="exampleFormControlSelect1">
+                                                            <option>Comuna</option>
+                                                            <option>La Florida</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Servicios -->
+                                <div class="card">
+                                    <div class="card-header px-1" id="headingServicios">
+                                        <h2 class="mb-0">
+                                            <div class="input-group mb-0">
+                                                <!-- Banda Ancha, Telefonia, Television form-row align-items-center justify-content-around -->
+                                                <div class="input-group-prepend mr-1">
+                                                    <img class="input-group-text" src="iconos/contrato_32Px.png" width="50" height="38" >
+                                                </div>
+                                                
+                                                <div class="mr-0 form-control form-col justify-content-around aling-Servicios" >
+
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="bandaAncha" >
+                                                        <label class="custom-control-label ContratoServicio" for="bandaAncha">Banda Ancha</label>
+                                                    </div>
+
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="telefonia" >
+                                                        <label class="custom-control-label ContratoServicio" for="telefonia">Telefonia</label>
+                                                    </div>
+
+                                                    <div class="custom-control custom-checkbox">
+                                                        <input type="checkbox" class="custom-control-input" id="television" >
+                                                        <label class="custom-control-label ContratoServicio" for="television">Televisión</label>
+                                                    </div>                                
+
+                                                </div>
+                                            </div>
+
+                                            <div class="input-group mb-1">
+                                                <div class="input-group-prepend pt-1">
+                                                    <img class="input-group-text" src="iconos/calendar_32Px.png" width="50" height="38">
+                                                </div>
+                                                <input name="fecha" type="date" class="form-control mx-0 my-1" placeholder="Fecha del Contrato" >
+                                                <button class="btn btn-link collapsed p-0 m-0" type="button" data-toggle="collapse" data-target="#collapseServicios" aria-expanded="false" aria-controls="collapseServicios">
+                                                    <img class="input-group-text" src="iconos/flechaAbajo_32Px.png" width="50" >
+                                                </button>
+                                            </div>
+                                        </h2>
+                                    </div>
+                                    <!-- Servicios Datos -->
+                                    <div id="collapseServicios" class="collapse" aria-labelledby="headingServicios" data-parent="#accordionContrato">
+                                        <div class="card-body  p-0">
+                                            <div class="mx-1 mt-1 mb-3">
+                                                <div class="bg-servicio">
+                                                    <div class="input-group mb-1">
+                                                        <div class="input-group-prepend ">
+                                                            <img class="input-group-text" src="iconos/cicloDePago_32Px.png" width="50" >
+                                                        </div>
+                                                        <input name="cicloPago" type="text" class="form-control" placeholder="Ciclo de Pago">
+                                                    </div>
+
+                                                    <div class="input-group mb-1">
+                        
+                                                        <div class="input-group-prepend">
+                                                            <img class="input-group-text" src="iconos/deco_32Px5.png" width="50" >
+                                                        </div>
+                                                        <select class="form-control" id="exampleFormControlSelect1">
+                                                            <option>Decoficador</option>
+                                                            
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="input-group ">
+                                        <div class="input-group-prepend ">
+                                            <img class="input-group-text" src="iconos/documentWrite_32Px.png" width="50" height="40" >
+                                        </div>
+                                        <textarea name="observacion" class="form-control " rows="3" placeholder="Observación"></textarea>
+                                    </div>
+
+                                    
+                                </div>
+                                <input type="submit" value="Vender" class="my-3 btn btn-success btn-block" name="bt-Enviar" title="Incluir la Venta" data-toggle="tooltip" />
+                                
+                            </div>
+                               
+                        </div>    
+                    </form>
+                </div>
+
+                <div class="col-md-5 my-4 my-auto">
+                	<!-- Texto del Contrato -->
+                    <p></p>                        
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+	<section id="Contact" class="py-5">
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>CONTACTANOS</h3>
+                    <form class="card py-3 sombraNegra" action="" >
+                        <div class="card-body">
+                            <div class="input-group">
+                                <div class="input-group-prepend mb-2">
+                                    <img class="input-group-text" src="iconos/User_Negocio_32Px.png" width="50" >
+                                </div>
+                                <input name="razon1" type="text" class="form-control text-capitalize" placeholder="Nombre y Apellido">
+                            </div>
+
+                            <div class="input-group">
+                                <div class="input-group-prepend mb-2">
+                                    <img class="input-group-text" src="iconos/smartphone_32Px.png" width="50" >
+                                </div>
+                                <input name="telefono" type="text" class="form-control" placeholder="Telefono" >
+                            </div>
+
+                            <div class="input-group">
+                                <div class="input-group-prepend mb-2">
+                                    <img class="input-group-text" src="iconos/emailSend_32Px.png" width="50" >
+                                </div>
+                                <input name="email" type="email" class="form-control" placeholder="Correo" >
+                            </div>
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <img class="input-group-text" src="iconos/documentWrite_32Px.png" width="50" height="40" >
+                                </div>
+                                <textarea name="mess" class="form-control " rows="5" placeholder="Escribe  tu  Mensaje"></textarea>
+                            </div>
+                            <input type="submit" value="Enviar" class="my-3 btn btn-success btn-block" name="bt-Enviar" title="Enviar el Correo" data-toggle="tooltip" />
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-lg-8 my-auto ">
+                    <div class="textoContactanos">
+                        <p class="display-4" >Informanos...</p>
+                        <ul class="ml-5" >
+                            <li>Cualquier eventulidad de la pagina</li>
+                            <li>De tu idea Creativa</li>
+                            <li>De tus Contactos</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="" >
+    	<div class="container">
+	    	<div class="row justify-content-around">
+
+	             <div class="col-mx-4 d-none d-sm-block align-self-center">
+	             	<img src="iconos/logoim.png" width="86" height="84" >
+	             </div>
+
+	             <div class="col-mx-4 py-3">
+	             	<h5>Telefono(s)</h5>
+	             	<br>
+	             	<p>+56 961 527 823</p>
+	             	<p>+58 426 550 98 99</p>
+	             	<p>+58 412 535 37 99</p>
+	             </div>
+
+	             <div class="col-mx-4 py-3">
+	             	<h5>Siguenos</h5>
+	             	<br>
+	             	<div class='ml-3 pl-4' >
+                        <div class="row pb-1">
+		             		<img src="iconos/instagram_48Px.png" width="32" height="32" >
+		             	</div>
+		             	<div class="row pb-1">
+		             		<img src="iconos/facebook_48Px.png" width="32" height="32" >
+		             	</div>
+		             	<div class="row pb-1">
+		             		<img src="iconos/twitter_48Px.png" width="32" height="32" >
+		             	</div>
+	             	</div>
+
+
+	             </div>
+            </div>
+            
+        </div>	
+    </footer>
+
+    <script type="text/javascript" src="js/jqueryx-3.4.1.slim.min.js"> </script>
+    <script type="text/javascript" src="js/popper.min.js"> </script>
+    <script type="text/javascript" src="js/bootstrap.min.js"> </script>
+    <script type="text/javascript" src="js/main.js"> </script>
+    
+</body>
+</html>

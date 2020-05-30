@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo"> Hola soy un documento en HTML </h1>
+        <p id="parrafo">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam minus nisi blanditiis dolorem veniam officia, exercitationem obcaecati eius pariatur odit eum nesciunt sit vitae soluta perspiciatis, quod quasi consequatur vero.
+        </p>
+        <button id="btnCambiar" class="btn btn-info">Cambiar</button>
+    </div>
+    <div class="container my-5">
+        <form id="formUsuario" >
+            <input type="text" name="idUsuario" onkeypress="onTestChange();" onblur="buscarId();" placeholder="Clave" class="form-control my-3 w-50" required>
+            <input type="text" name="apellido" placeholder="Apellido" class="form-control my-3">
+            <input type="text" name="razon1" id="uno"   placeholder="Rason Social" class="form-control my-3">
+            <button type="submit" class="btn btn-primary" >Enviar</button>
+        </form>
+    </div>
+
+
+
+        <textarea id="txtArea" onkeypress="onTestChange();"></textarea>
+
+        
+
+    <!-- FocusEvent onblur -->
+
+    <script type="text/javascript" src="js/jqueryx-3.4.1.slim.min.js"> </script>
+    <script type="text/javascript" src="js/popper.min.js"> </script>
+    <script type="text/javascript" src="js/bootstrap.min.js"> </script>
+    <script src="eljs.js" >
+    </script>
+</body>
+</html>

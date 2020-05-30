@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+  
+.navbar{
+
+  box-shadow: 4px 2px 8px #000;
+  
+  border-bottom: 2px rgb(133, 186, 238) solid;
+}
+
+@media (max-width: 768px){ /* Table */
+    .navbar{
+        background: rgb(248,249,250);
+    }
+}
+
+.navbarSinOpacity{
+  opacity: .9;
+}
+
+
+
+#FondoWeb{
+
+  background: url('../img/Bg2.png') no-repeat center;
+  min-height: 100vh;
+  background-position-y: 40px;
+  background-attachment: fixed;
+  /*background-color: rgb(133, 186, 238);*/
+}
+
+.Eslogan{
+  text-align: right ;
+  color: white;
+  padding-top: 90px;
+  margin-right: 10px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color:rgb(133, 186, 238);
+ 
+}
+
+
+
+ 
+/* a:link { color: blue; }           Enlaces no visitados 
+a:visited { color: purple; }      Enlaces visitados 
+a:hover { background: yellow; }   El usuario esta sobre el enlace 
+a:active { color: lime; }         Enlaces activos */
+
+ 
+
+
+
