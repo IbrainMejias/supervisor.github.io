@@ -3,39 +3,48 @@
   margin: 0;
   border: 0;
   font-family: Verdana, 'Arial Narrow Bold', Arial,Georgia,Helvetica, sans-serif;
-
 }
 
+
 @font-face{
-	font-family: 'menu';
+	font-family: 'Roboto';
   src: url('../fuentes/Roboto-Bold.ttf');
-  font-family: 'uber';
+  font-family: 'Gravity';
   src: url('../fuentes/Gravity-Book.otf');
 }
 
-#fuenteMenu{
-	font-family: 'menu';
-  font-size: 18px;
+.fuenteRoboto{
+	font-family: 'Roboto';
   /*font-weight: bold;*/
 }
+.Roboto18{font-size: 18px;}
 
-#fuenteUber{
-	font-family: 'uber';
-  font-size: 32px;
+.fuenteGravity{
+	font-family: 'Gravity';
   letter-spacing: 0.01em;
-	/*font-weight: bold;*/
 }
-
+.Gravity26{ font-size: 26px; }
+.Gravity14{ font-size: 14px; }
 
 
 .navbar{
   box-shadow: 4px 4px 8px #000; /* La Sombra*/
-  /* rgb(62,170,243) Color del LOgo IM*/
   border-bottom: 1px #ffffff solid;
   border-bottom: 1px rgb(51,204,255) solid;
   border-bottom: 1px floralwhite solid;
-  background-color: rgb(248,249,250,0.4);
-  /*background-color: blue;*/
+  background-color:  rgb(248,249,250,0.4);
+  /* rgb(62,170,243) Color del Logo IM*/
+}
+.navbar-light{
+  transition: all 1s ease;
+}
+.navbar-nav .nav-item .nav-link:hover {
+  color:rgb(39,150,240);
+  color:rgb(252,140,59);
+  color:rgb(51,204,255);
+}
+.navbar-nav .nav-item .nav-link {
+  color: #000;
 }
 
 
@@ -46,28 +55,11 @@ header {
   background-size: cover;
   background-attachment: fixed;
 }
-
 .header-text {
-  /*text-align: left ;*/
   color: white;
   padding-top: 90px;
-  /*margin-left: 10px;*/
 }
 
-.navbar-nav .nav-item .nav-link:hover {
-  color:rgb(39, 150, 240);
-  color:rgb(252,140,59);
-  color:rgb(51,204,255);
-}
-
-.navbar-nav .nav-item .nav-link {
-  color: #000;
-} 
-
-
-#menu { }
-
-#menu .container{ }
 
 .menuLeft{
 	margin: 0px;
@@ -75,18 +67,15 @@ header {
 	height: 54px;
   width: 180px;	
   border-right: 1px floralwhite solid;	
-  
 }
-
-
 .menuRight{
-	margin-left: 50px;
 	padding-top: 6px;
 	padding-left: 22px;
 	height: 54px;
-    width: 50px;	
+  width: 50px;	
 	border-left: 1px floralwhite solid;
 }
+
 
 h3{
   font-weight: bold;
@@ -94,10 +83,10 @@ h3{
   letter-spacing: 2px;
 }
 
+
 .sombraNegra{ 
   box-shadow: 15px 15px 30px #000; /* La Sombra*/
 }
-
 .sombraAzul{
   box-shadow: 15px 15px 30px #94a5b0; 
 }
@@ -118,18 +107,20 @@ h3{
   background: url('../img/liderGrupo.png') no-repeat center;
   background-size: cover;
 }
+#containerMiEquipo{
+  margin-left: 4%;
+  margin-right: 4%;  
+}
 
 
- /*  Supervisor */
+/*  Supervisor */
  #Supervisor {
   min-height: 100vh;
   margin-top: 0px;
 }
-
 #Supervisor .row {
  padding-top: 70px;
 }
-
 .switchSupervisor{
   padding: 0px;
   height: 38px;
@@ -141,20 +132,7 @@ h3{
   padding-top: 6px;
 }
 
-#SupervisorRight{
-  margin-top:2px; 	
-  height: 580px;
-  width: 580px;
-  background: url('../img/supervisor.jpg') no-repeat center;
-  margin-left: 16px;
-  box-shadow: 10px 10px 20px #000; /* La Sombra*/    
-  border-radius: 3.5px;
-  color: floralwhite;
-  background-size: cover;
-}
-
-
- /*  Supervisor */
+/*  Vendedor */
  #Vendedor {
   min-height: 100vh;
   margin-top: 0px;
@@ -164,29 +142,69 @@ h3{
   background-color: rgb(200,203,206);
   background-color: white;
 }
-
 #Vendedor .row {
   padding-top: 75px;
 }
-
-.vendedorLeft{
-  box-shadow: 4px 4px 12px #000; /* La Sombra*/
+.vendedorRight{
+  box-shadow: 20px 15px 30px #000; /* La Sombra*/
   margin-left: 20px;
   margin-top: 20px;
 }
-#vendedorRight{
-  margin-top:0px; 	
-  height: 580px;
-  width: 588px;
-  background: url('../img/vendedor.jpg') no-repeat center ;
-  margin-left:1px;
-  
-  color: black;
-  background-size: contain;
-  /*background-color: burlywood;*/
-  
+
+
+/* Contrato  */
+#Contrato{
+  min-height: 100vh;
+  margin-top: 0px;
+  background: url('../img/bgContrato.jpg') no-repeat center;
+  background-size: cover;
+}
+#Contrato .row {
+  padding-top: 56px;
+}
+.contratoHeader{
+  font-family: 'menu';
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: 34px;
+}
+.ContratoServicio{
+  font-size: 12px;
+  padding-top: 3px;
 }
 
+
+/* Contrato  -  Cliente */
+.bg-Cliente{
+  background: linear-gradient(to right, rgba(235,225,215, .1), rgba(83,205,255,.9) ) , url('../iconos/company_128Px.png') no-repeat center;
+}
+.bg-Cliente .form-control{
+  background: transparent !important ;
+}
+
+/* Contrato  -  Instalación */
+.bg-instalacion{
+  background: linear-gradient(to right, rgba(235,225,215, .1), rgba(108,247,47,.5) ) ;
+}
+.bg-instalacion .form-control{
+  background: transparent !important ;
+}
+
+/* Contrato -  Servicios */
+.aling-Servicios{
+  margin-left: -5px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.bg-servicio{
+  background: linear-gradient(to right, rgba(235,225,215, .1), rgba(199,209,211,.7) ) ;
+  background: linear-gradient(to right, rgba(235,225,215, .1), rgba(227,128,57,.3) ) ;
+}
+.bg-servicio .form-control{
+  background: transparent !important ;
+}
 
 
 /* Contactanos */
@@ -197,169 +215,93 @@ h3{
   background: linear-gradient(to right, rgba(33, 50, 129, .0), rgba(155,35,234,.4) ) , url('../img/bgContactanos.jpg') no-repeat center;
   background-size: cover;
   color: floralwhite;
-  
 }
 
-/* Contrato  */
-#Contrato{
-  
-  min-height: 100vh;
-  margin-top: 0px;
-  background: url('../img/bgContrato.jpg') no-repeat center;
-  background-size: cover;
-}
-
-
-
-#Contrato .row {
-  padding-top: 130px; 
-
-}
-
-.contratoHeader{
-  font-family: 'menu';
-  font-weight: bold;
-  padding-top: 10px;
-  font-size: 34px;
-}
-
-.ContratoServicio{
-  font-size: 12px;
-  padding-top: 3px;
-}
-
-
-
-/* Contrato  -  Cliente */
-.bg-Cliente{
-  /* background: linear-gradient(to right, rgba(255,245,235, .5), rgba(83,205,255,.7) ) , url('../iconos/company_128Px.png') no-repeat center; */
-  background: linear-gradient(to right, rgba(235,225,215, .1), rgba(83,205,255,.9) ) , url('../iconos/company_128Px.png') no-repeat center;
-}
-
-.bg-Cliente .form-control{
-  background: transparent !important ;
-}
-
-/* Contrato  -  Instalación */
-.bg-instalacion{
-  background: linear-gradient(to right, rgba(235,225,215, .1), rgba(108,247,47,.5) ) ;
-}
-
-.bg-instalacion .form-control{
-  background: transparent !important ;
-}
-
-/* Contrato -  Servicios */
-
-.aling-Servicios{
-  margin-left: -5px;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.bg-servicio{
-  background: linear-gradient(to right, rgba(235,225,215, .1), rgba(199,209,211,.7) ) ;
-  background: linear-gradient(to right, rgba(235,225,215, .1), rgba(227,128,57,.3) ) ;
-}
-
-.bg-servicio .form-control{
-  background: transparent !important ;
-}
 
 footer{
   min-height: 160px;
   color: white;
-  background-color: rgb(237,242,245);
-  background-color: rgb(221,222,227);
-  background-color: rgb(176,185,190) ;
   background-color: rgb(200,203,206);
-
 }
-
 footer p {
   color: black;
   font-weight: bold;
-  /*line-height: 100%;*/
-
-
 }
 
 
-/* Media Query */
-
-@media (max-width: 440px){ /* Table */
-  .aling-Servicios{
-    display: inline-block;
+/*************************************/
+/********   Media Query **************/
+/*************************************/
+@media (max-width: 1200px){ /* Table */
+  #containerMiEquipo{
+    margin-left: 4%;
+    margin-right: 4%;
   }
 }
 
+@media (max-width: 991px){ /* Table */
+  .SupervisorRight{
+    /*margin-top: -50px;*/
+  }
+  #containerMiEquipo{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 
 @media (max-width: 768px){ /* Table */
-
   .navbar{ background: rgb(248,249,250); }
   .navbar{
     border-bottom: 2px #ffffff solid;
     border-bottom: 2px rgb(51,204,255) solid;
     border-bottom: 2px floralwhite solid;
   }
-  
   #Supervisor .row { padding-top: 56px; }
-
   #Vendedor .row { padding-top: 56px; }
-
   #Contrato{ background: #fff; }
   #Contrato .row { padding-top: 56px; }
-
   .contratoHeader{
-    font-family: 'menu';
-    font-weight: bold;
-    padding-top: 10px;
-    font-size: 24px;
+        font-size: 24px;
   }
-
+  #containerMiEquipo{
+    margin-left: 3%;
+    margin-right: 3%;   
+  }
 }
 
+@media (max-width: 440px){ /* Table */
+  .aling-Servicios{
+    display: inline-block;
+  }
+  #containerMiEquipo{
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+
+
+
 /*
-primary
-secondary
-success
-danger
-warning
-info
-light
-dark
-link
-*/
+  --- Colores ---
+  primary secondary success danger
+  warning info light dark link
 
-/* Para el Correo
-<a href="mailto:someone@exemple.com?subject=Questions">Preguntas aquí</a>
-*/
 
-/* Elementos html
-<!--[if lt IE 9]>
-  <script>
-    document.createElement("header" );
-    document.createElement("footer" );
-    document.createElement("section"); 
-    document.createElement("aside"  );
-    document.createElement("nav"    );
-    document.createElement("article"); 
-    document.createElement("hgroup" ); 
-    document.createElement("time"   );
-  </script>
-<![endif]-->
+  --- Para el Correo ---
+  <a href="mailto:someone@exemple.com?subject=Questions">Preguntas aquí</a>
+
+  --- Elementos html ---
+  <!--[if lt IE 9]>
+    <script>
+      document.createElement("header" );
+      document.createElement("footer" );
+      document.createElement("section"); 
+      document.createElement("aside"  );
+      document.createElement("nav"    );
+      document.createElement("article"); 
+      document.createElement("hgroup" ); 
+      document.createElement("time"   );
+    </script>
+  <![endif]-->
 
 */
-
-
-/* a:link { color: blue; }           Enlaces no visitados 
-a:visited { color: purple; }      Enlaces visitados 
-a:hover { background: yellow; }   El usuario esta sobre el enlace 
-a:active { color: lime; }         Enlaces activos */
-
-
-
-
-

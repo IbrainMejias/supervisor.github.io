@@ -1,3 +1,10 @@
+var containerMiEquipo=document.getElementById('containerMiEquipo');
+
+console.log(containerMiEquipo.attributes.class.ownerElement);
+
+containerMiEquipo.attributes.class.ownerElement.classList[0]='contaier-fluit';
+/*DOMTokenList*/
+/*console.log(containerMiEquipo.attributes.class.ownerElement.classList[0]);*/
 
 $('[data-toggle="tooltip"]').tooltip();
 $('[data-toggle="popover"]').popover();
@@ -44,3 +51,4 @@ $(window).scroll(function() {
 		$("#menu").removeClass("bg-light");
 	}
 });
+/*NamedNodeMap[1].class.ownerElement.DOMTokenList[0]*/
